@@ -9,7 +9,7 @@ definitions:
         example: "2021-10-02"
         type: string
       person_in_charge:
-        example: dwi
+        example: alif
         type: string
       status:
         example: New
@@ -21,7 +21,7 @@ definitions:
   controllers.User:
     properties:
       name:
-        example: dwi
+        example: alif
         type: string
       user_id:
         example: 1
@@ -30,8 +30,8 @@ definitions:
 host: localhost:8080
 info:
   contact:
-    email: dwihisyam3@gmail.com
-    name: Dwi Ahmad Hisyam
+    email: alifpratama2305@gmail.com
+    name: Muhamad Alif Pratama Irawan
   description: This is a sample service for managing todos
   license:
     name: Todos v1.0
@@ -43,191 +43,191 @@ paths:
   /todos:
     get:
       consumes:
-      - application/json
+        - application/json
       description: Get details of all todo
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
             items:
-              $ref: '#/definitions/controllers.Todo'
+              $ref: "#/definitions/controllers.Todo"
             type: array
       summary: Get details of all todo
       tags:
-      - todo
+        - todo
     post:
       consumes:
-      - application/json
+        - application/json
       description: Create a new todo with the input payload
       parameters:
-      - description: Create todo
-        in: body
-        name: todo
-        required: true
-        schema:
-          $ref: '#/definitions/controllers.Todo'
+        - description: Create todo
+          in: body
+          name: todo
+          required: true
+          schema:
+            $ref: "#/definitions/controllers.Todo"
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.Todo'
+            $ref: "#/definitions/controllers.Todo"
       summary: Create a new todo
       tags:
-      - todo
+        - todo
   /todos/{id}:
     delete:
       consumes:
-      - application/json
+        - application/json
       description: Delete a todo
       parameters:
-      - description: Delete todo
-        in: body
-        name: todo
-        required: true
-        schema:
-          $ref: '#/definitions/controllers.Todo'
+        - description: Delete todo
+          in: body
+          name: todo
+          required: true
+          schema:
+            $ref: "#/definitions/controllers.Todo"
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.Todo'
+            $ref: "#/definitions/controllers.Todo"
       summary: Delete a todo
       tags:
-      - todo
+        - todo
     get:
       consumes:
-      - application/json
+        - application/json
       description: Get details of todo by id
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.Todo'
+            $ref: "#/definitions/controllers.Todo"
       summary: Get details of todo by id
       tags:
-      - todo
+        - todo
     put:
       consumes:
-      - application/json
+        - application/json
       description: Update a todo with the input payload
       parameters:
-      - description: Update todo
-        in: body
-        name: todo
-        required: true
-        schema:
-          $ref: '#/definitions/controllers.Todo'
+        - description: Update todo
+          in: body
+          name: todo
+          required: true
+          schema:
+            $ref: "#/definitions/controllers.Todo"
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.Todo'
+            $ref: "#/definitions/controllers.Todo"
       summary: Update a todo
       tags:
-      - todo
+        - todo
   /users:
     get:
       consumes:
-      - application/json
+        - application/json
       description: Get details of all user
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
             items:
-              $ref: '#/definitions/controllers.User'
+              $ref: "#/definitions/controllers.User"
             type: array
       summary: Get details of all user
       tags:
-      - user
+        - user
     post:
       consumes:
-      - application/json
+        - application/json
       description: Create a new user with the input payload
       parameters:
-      - description: Create user
-        in: body
-        name: user
-        required: true
-        schema:
-          $ref: '#/definitions/controllers.User'
+        - description: Create user
+          in: body
+          name: user
+          required: true
+          schema:
+            $ref: "#/definitions/controllers.User"
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.User'
+            $ref: "#/definitions/controllers.User"
       summary: Create a new user
       tags:
-      - user
+        - user
   /users/{userId}:
     delete:
       consumes:
-      - application/json
+        - application/json
       description: Delete a user
       parameters:
-      - description: Delete user
-        in: body
-        name: user
-        required: true
-        schema:
-          $ref: '#/definitions/controllers.User'
+        - description: Delete user
+          in: body
+          name: user
+          required: true
+          schema:
+            $ref: "#/definitions/controllers.User"
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.User'
+            $ref: "#/definitions/controllers.User"
       summary: Delete a user
       tags:
-      - user
+        - user
     get:
       consumes:
-      - application/json
+        - application/json
       description: Get details of user by id
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.User'
+            $ref: "#/definitions/controllers.User"
       summary: Get details of user by id
       tags:
-      - user
+        - user
     put:
       consumes:
-      - application/json
+        - application/json
       description: Update a user with the input payload
       parameters:
-      - description: Update user
-        in: body
-        name: user
-        required: true
-        schema:
-          $ref: '#/definitions/controllers.User'
+        - description: Update user
+          in: body
+          name: user
+          required: true
+          schema:
+            $ref: "#/definitions/controllers.User"
       produces:
-      - application/json
+        - application/json
       responses:
         "200":
           description: OK
           schema:
-            $ref: '#/definitions/controllers.User'
+            $ref: "#/definitions/controllers.User"
       summary: Update a user
       tags:
-      - user
+        - user
 swagger: "2.0"

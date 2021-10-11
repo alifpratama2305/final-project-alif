@@ -19,8 +19,8 @@ var doc = `{
         "title": "{{.Title}}",
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
-            "name": "Dwi Ahmad Hisyam",
-            "email": "dwihisyam3@gmail.com"
+            "name": "Muhamad Alif Pratama Irawan",
+            "email": "alifpratama2305@gmail.com"
         },
         "license": {
             "name": "Todos v1.0",
@@ -336,7 +336,7 @@ var doc = `{
                 },
                 "person_in_charge": {
                     "type": "string",
-                    "example": "dwi"
+                    "example": "alif"
                 },
                 "status": {
                     "type": "string",
@@ -353,7 +353,7 @@ var doc = `{
             "properties": {
                 "name": {
                     "type": "string",
-                    "example": "dwi"
+                    "example": "alif"
                 },
                 "user_id": {
                     "type": "integer",

@@ -10,8 +10,6 @@ import (
 // @version 1.0
 // @description This is a sample service for managing todos
 // @termsOfService http://swagger.io/terms/
-// @contact.name Dwi Ahmad Hisyam
-// @contact.email dwihisyam3@gmail.com
 // @license.name Todos v1.0
 // @license.url http://localhost:8080/todos
 // @host localhost:8080
